@@ -1,0 +1,21 @@
+export AWS_PROFILE=mohamedouhichi
+aws sso login --profile mohamedouhichi
+
+
+terraform init
+terraform validate
+terraform plan
+
+
+aws eks update-kubeconfig \
+  --region us-west-2 \
+  --name eks-cluster \
+  --profile mohamedouhichi
+
+
+kubectl get nodes
+
+
+helm lint front-admin
+helm template front-admin ./front-admin
+helm install front-admin ./front-admin

@@ -1,0 +1,17 @@
+replicaCount: 1
+
+image:
+  repository: mongo
+  tag: "8"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 27017
+
+containerPort: 27017
+
+persistence:
+  enabled: true
+  size: 5Gi
+  storageClass: ebs-sc

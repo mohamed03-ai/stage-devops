@@ -1,0 +1,12 @@
+replicaCount: 1
+
+image:
+  repository: 136609826386.dkr.ecr.us-west-2.amazonaws.com/front-user
+  tag: v2
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+containerPort: 80
