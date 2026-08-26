@@ -26,7 +26,7 @@ This repository contains the application source code, the AWS infrastructure (Te
 
 The diagram below illustrates the overall AWS/EKS architecture used to deploy `<Project Name>`.
 
-![Architecture Diagram](docs/architecture.png)
+![Architecture Diagram](architectur.drawio.png)
 
 <!--
 Place your architecture diagram image inside a `docs/` folder at the root of the repo,
